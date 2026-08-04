@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Food Listings - FoodBridge</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+<div class="row">
+
+<!-- Sidebar -->
+
+<div class="col-md-3 col-lg-2 sidebar p-4">
+
+<h3 class="text-white mb-4 sidebar-title">
+
+<i class="bi bi-basket2-fill"></i>
+
+FoodBridge
+
+</h3>
+
+<a href="dashboard.html">
+<i class="bi bi-house-door-fill"></i>
+Dashboard
+</a>
+
+<a href="food-listings.html" class="active">
+<i class="bi bi-box-seam"></i>
+Food Listings
+</a>
+
+<a href="post-food.html">
+<i class="bi bi-plus-circle"></i>
+Post Food
+</a>
+
+<a href="request-food.html">
+<i class="bi bi-envelope"></i>
+Requests
+</a>
+
+<a href="donation-history.html">
+<i class="bi bi-clock-history"></i>
+Donation History
+</a>
+
+<a href="index.html">
+<i class="bi bi-box-arrow-right"></i>
+Logout
+</a>
+
+</div>
+
+<!-- Main Content -->
+
+<div class="col-md-9 col-lg-10 p-4">
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+
+    <div>
+
+        <h2 class="fw-bold">
+            <i class="bi bi-box-seam text-success"></i>
+            Food Listings
+        </h2>
+
+        <p class="text-muted mb-0">
+            Manage all available food donations efficiently.
+        </p>
+
+    </div>
+
+</div>
+
+<div class="row mb-4">
+
+<div class="col-md-6">
+
+<div class="input-group">
+
+    <span class="input-group-text bg-success text-white">
+
+        <i class="bi bi-search"></i>
+
+    </span>
+
+    <input
+        type="text"
+        class="form-control"
+        placeholder="Search by food name...">
+
+</div>
+
+</div>
+
+<div class="col-md-6 text-md-end mt-3 mt-md-0">
+
+<a href="post-food.html"
+class="btn btn-success px-4">
+
+<i class="bi bi-plus-circle-fill"></i>
+
+Add New Food
+
+</a>
+
+
+</div>
+
+</div>
+
+<div class="card shadow border-0">
+
+<div class="card-body">
+
+<div class="table-responsive">
+
+<table class="table table-hover align-middle">
+
+<thead class="table-success">
+
+<tr>
+
+<th>ID</th>
+<th>Food Name</th>
+<th>Quantity</th>
+<th>Location</th>
+<th>Expiry</th>
+<th>Status</th>
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>1</td>
+
+<td>Chicken Biryani</td>
+
+<td>20 Packs</td>
+
+<td>Dhanmondi</td>
+
+<td>29 Jul 2026 8:00 PM</td>
+
+<td>
+
+<span class="badge bg-success">
+
+Available
+
+</span>
+
+</td>
+
+<td>
+
+    <a href="view-food.html" class="btn btn-success btn-sm">
+        <i class="bi bi-eye"></i>
+    </a>
+
+
+<button class="btn btn-sm btn-warning">
+
+<i class="bi bi-pencil"></i>
+
+</button>
+
+<button class="btn btn-sm btn-danger">
+
+<i class="bi bi-trash"></i>
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>2</td>
+
+<td>Fried Rice</td>
+
+<td>15 Packs</td>
+
+<td>Banani</td>
+
+<td>29 Jul 2026 7:30 PM</td>
+
+<td>
+
+<span class="badge bg-warning text-dark">
+
+Requested
+
+</span>
+
+</td>
+
+<td>
+
+<button class="btn btn-sm btn-primary">
+
+<i class="bi bi-eye"></i>
+
+</button>
+
+<button class="btn btn-sm btn-warning">
+
+<i class="bi bi-pencil"></i>
+
+</button>
+
+<button class="btn btn-sm btn-danger">
+
+<i class="bi bi-trash"></i>
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>3</td>
+
+<td>Bread</td>
+
+<td>30 Packs</td>
+
+<td>Mirpur</td>
+
+<td>28 Jul 2026 6:00 PM</td>
+
+<td>
+
+<span class="badge bg-secondary">
+
+Completed
+
+</span>
+
+</td>
+
+<td>
+
+<button class="btn btn-sm btn-primary">
+
+<i class="bi bi-eye"></i>
+
+</button>
+
+<button class="btn btn-sm btn-warning">
+
+<i class="bi bi-pencil"></i>
+
+</button>
+
+<button class="btn btn-sm btn-danger">
+
+<i class="bi bi-trash"></i>
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>4</td>
+
+<td>Vegetable Curry</td>
+
+<td>12 Boxes</td>
+
+<td>Uttara</td>
+
+<td>29 Jul 2026 5:30 PM</td>
+
+<td>
+
+<span class="badge bg-primary">
+
+Collected
+
+</span>
+
+</td>
+
+<td>
+
+<button class="btn btn-sm btn-primary">
+
+<i class="bi bi-eye"></i>
+
+</button>
+
+<button class="btn btn-sm btn-warning">
+
+<i class="bi bi-pencil"></i>
+
+</button>
+
+<button class="btn btn-sm btn-danger">
+
+<i class="bi bi-trash"></i>
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>5</td>
+
+<td>Mixed Vegetables</td>
+
+<td>10 Kg</td>
+
+<td>Gulshan</td>
+
+<td>24 Jul 2026 9:00 PM</td>
+
+<td>
+
+<span class="badge bg-danger">
+
+Expired
+
+</span>
+
+</td>
+
+<td>
+
+<button class="btn btn-sm btn-primary">
+
+<i class="bi bi-eye"></i>
+
+</button>
+
+<button class="btn btn-sm btn-warning">
+
+<i class="bi bi-pencil"></i>
+
+</button>
+
+<button class="btn btn-sm btn-danger">
+
+<i class="bi bi-trash"></i>
+
+</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
+
+z
